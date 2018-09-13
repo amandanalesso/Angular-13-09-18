@@ -1,4 +1,5 @@
 import{ Component, Input, OnInit } from "@angular/core";
+import { Planeta } from "./planeta";
 
 
 @Component({
@@ -7,15 +8,9 @@ import{ Component, Input, OnInit } from "@angular/core";
     styles:['']
 })
 export class PlanetaComponent implements OnInit{
-    @Input()dados
-
-    titulo:string ='';
-    imagem:string ='';
-    descricao:string ='';
+   
+   
+    @Input('dados')planeta = new Planeta();
+     
     
-    ngOnInit(){
-        this.titulo = this.dados.titulo;
-        this.imagem = this.dados.imagem;
-        this.descricao = this.dados.conteudo;
-    }
 }
