@@ -16,6 +16,6 @@ export class PlanetaComponent{
     ngOnInit(){
         this.titulo = this.dados.titulo;
         this.imagem = this.dados.imagem;
-        this.descricao = this.dados.descricao;
+        this.descricao = this.dados.conteudo;
     }
 }
