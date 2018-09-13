@@ -1,4 +1,4 @@
-import{ Component, Input } from "@angular/core";
+import{ Component, Input, OnInit } from "@angular/core";
 
 
 @Component({
@@ -6,7 +6,7 @@ import{ Component, Input } from "@angular/core";
     templateUrl:'/planeta.component.html',
     styles:['']
 })
-export class PlanetaComponent{
+export class PlanetaComponent implements OnInit{
     @Input()dados
 
     titulo:string ='';
